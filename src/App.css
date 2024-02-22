@@ -1,28 +1,67 @@
-.app {
+body {
+  background-color: #eeecec; 
+}
+
+.App {
   text-align: center;
-  margin: 20px;
+  padding: 20px; 
 }
 
-.recipes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.recipe {
-  border: 1px solid #ddd;
-  padding: 10px;
-  width: 200px;
-}
-
-input[type="text"] {
+.App-title {
+  font-size: 50px;
   margin-bottom: 20px;
-  padding: 10px;
-  width: 300px;
 }
 
-button {
+.SearchInput {
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.RecipeItem {
+  display: inline-block;
+  width: 300px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease; 
+}
+
+.RecipeItem:hover {
+  transform: translateY(-5px); 
+}
+
+.RecipeImg {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.RecipeDetails {
+  padding: 10px;
+}
+
+.MealName {
+  font-weight: bold;
+}
+
+.ViewButton {
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0 0 5px 5px;
   cursor: pointer;
-  padding: 5px 10px;
+  transition: background-color 0.3s ease; 
+}
+
+.ViewButton:hover {
+  background-color: #0056b3;
 }
